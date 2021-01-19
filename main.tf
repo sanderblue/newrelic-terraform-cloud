@@ -20,5 +20,5 @@ data "newrelic_entity" "example_app" {
 }
 
 resource "newrelic_alert_policy" "golden_signal_policy" {
-  name = "Golden Signals Terraform Cloud POC - ${data.newrelic_entity.example_app.name}"
+  name = "Golden Signals Terraform Cloud POC test - ${data.newrelic_entity.example_app.name}"
 }
